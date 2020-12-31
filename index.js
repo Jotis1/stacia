@@ -6,7 +6,7 @@ const ytdl = require("ytdl-core")
 const { YTSearcher } = require("ytsearcher");
 const { Player, Queue } = require("discord-player");
 const searcher = new YTSearcher({
-    key: "AIzaSyDKI69qTXFjH5apoQiAlqn2qaAFh4n310U",
+    key: process.env.youtube_api,
     revealed: true
 });
 
